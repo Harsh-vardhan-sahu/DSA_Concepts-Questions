@@ -1,0 +1,6 @@
+// STL:- standard template library
+//STL have four parts:-
+//Containers
+//Iterators
+//Algorithms
+//Functions
