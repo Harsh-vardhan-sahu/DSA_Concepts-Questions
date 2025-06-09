@@ -23,4 +23,3 @@ int main(){
      m=s+(ed-s)/2;
     }
 };
-//another
