@@ -17,6 +17,9 @@ int main(){
     vector<pair<int,int>> vec= {{1,2},{2,3},{4,5},{11,1},{17,1},{100,0},{6,7},{10,9}};
     sort(arr,arr+5);
     sort(vec.begin(),vec.end());
+    //reverse(vec.begin(),vec.end())
+    //reverse(vec.begin()+1,vec.end()+3)
+    
   for(int a:arr){
     cout<<a<<" ";
   }

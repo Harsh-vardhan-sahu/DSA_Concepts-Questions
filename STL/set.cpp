@@ -9,7 +9,7 @@ int main(){
     s.insert(1);
     s.insert(1);
     s.insert(3);
-   // s.insert(4);
+    s.insert(4);
     s.insert(8);
     s.insert(2);
 //O(logn)
@@ -17,7 +17,7 @@ int main(){
         cout<<i<<" ";
     }
 cout<<endl;
-cout<<"lower bound = "<<*(s.lower_bound(4))<<endl; //less than and equal to key variable
+cout<<"lower bound = "<<*(s.lower_bound(4))<<endl; //not less than but equal and greater to key variable
 cout<<"Upper bound = "<<*(s.upper_bound(4))<<"\n";// always greater than key 
 
 

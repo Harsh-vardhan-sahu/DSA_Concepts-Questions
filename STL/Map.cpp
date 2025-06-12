@@ -48,4 +48,6 @@ v.emplace("car",100);
  for(auto p:v){
     cout<<p.first<<" "<<p.second<<endl;
 }
+//function in map like insert,erase,count takes o(logn) time complexcity because map implemented by self balanceing tree
+//unorder_map all function have O(1) and in very rare cases O(n)
 }

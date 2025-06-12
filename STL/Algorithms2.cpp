@@ -9,7 +9,7 @@ int main(){
     cout<<*(max_element(vec.begin(),vec.end()))<<endl;
     cout<<*(min_element(vec.begin(),vec.end()))<<endl;
 
-    cout<<binary_search(vec.begin(),end(vec),11)<<endl;
+    cout<<binary_search(vec.begin(),end(vec),1)<<endl;
     next_permutation(s.begin(),s.end());
      cout<<s;
 
