@@ -1,5 +1,6 @@
 #include <iostream>
 #include<map>
+#include<vector>
 #include<unordered_map>
 using namespace std;
 int main(){
@@ -48,6 +49,27 @@ v.emplace("car",100);
  for(auto p:v){
     cout<<p.first<<" "<<p.second<<endl;
 }
+unordered_map<int,int>mp;
+map<int,int>pm;
+vector<int> nums = {6,1,2,4,1};
+cout<<"\n";
+for(int n:nums){
+     if (n%2==0) pm[n]++;
+}
+int ans=0;
+int occur=0;
+for(auto n:pm){
+ if(occur==n.second){
+    ans=min(ans,n.first);
+ }
+ else if(occur<n.second){
+    occur=n.second;
+    ans=n.first;
+ }
+}
+ans=(occur==0)? -1:ans;
+cout<<ans;
+
 //function in map like insert,erase,count takes o(logn) time complexcity because map implemented by self balanceing tree
 //unorder_map all function have O(1) and in very rare cases O(n)
 }
