@@ -12,7 +12,7 @@ int main(){
         i++;
         j++;
          if(i==s2.size()){
-    cout<<"true\n";
+    cout<<"true";
    }
     }
     else{
