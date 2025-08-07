@@ -37,6 +37,18 @@ public:
             head=newNode;
         }
     }
+    int search(int key){
+        Node* temp=head;
+        int id=0;
+        while(temp!=NULL){
+            if(temp->data==key){
+                return id;
+            }
+            temp= temp->next;
+            id++;
+        }
+        return -1;
+    }
     void printll(){
         Node* temp=head;
         while(temp!=NULL){
@@ -99,5 +111,6 @@ int main(){
   l.pop_front();
   l.pop_back();
   l.printll();
+  cout<<l.search(111)<<endl;
  return 0;
 }
